@@ -5,7 +5,7 @@ import React from 'react'
 
 function Card ({image, name,price,desc}) {
   return (
-    <div className='flex flex-col gap-2 h-100 w-60 outline-1 p-2.5 rounded-sm '>
+    <div className='flex flex-col gap-2 h-100 w-full max-w-sm outline-1 p-2.5 rounded-sm '>
         <div className="h-30 flex items-center justify-center">
              <img  className="w-full h-full object-fill rounded-lg"   src={image}/>
         </div>
