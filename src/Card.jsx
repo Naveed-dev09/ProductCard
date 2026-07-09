@@ -7,7 +7,7 @@ function Card ({image, name,price,desc}) {
   return (
     <div className='flex flex-col gap-2 h-100  outline-1 p-2.5 rounded-sm '>
         <div className="h-30 flex items-center justify-center">
-             <img  className="w-full h-full object-fill rounded-lg"   src={image}/>
+             <img  className="w-full h-auto object-cover rounded-lg grow"   src={image}/>
         </div>
         <h1 className='font-semi-bold font-sans text-xl'>{name}</h1>
         <h3> Price: PKR <span className='text-green-600'>{price}</span></h3>
@@ -21,4 +21,4 @@ function Card ({image, name,price,desc}) {
   )
 }
 
-export default Card
+export default Cards
